@@ -44,7 +44,7 @@ export default function Home({ produtos, userAgent }) {
         message += "%0ATOTAL:%20R$" + preco
         const formated = encodeURIComponent(message).replace(/[!'()]/g, escape).replace(/\*/g, "%2A")
         
-        window.location.href = "https://api.whatsapp.com/send?phone=5516988082472&text=" + message
+        window.location.href = "whatsapp://send?phone=5516988082472&text=" + message
     }
         
 
