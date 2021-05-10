@@ -132,7 +132,7 @@ export default function Home({ categorias, produtos }) {
 
 
 export async function getStaticProps() {
-  const { db } = await connectToDatabase(process.env.MONGODB_URI, 'juan');
+  const { db } = await connectToDatabase("mongodb+srv://jfsoftwaredev:Escalobaloba_1999@cluster0.2brja.mongodb.net/juan?retryWrites=true&w=majority", 'juan');
   const produtos = await db
     .collection("produtos")
     .find({})
