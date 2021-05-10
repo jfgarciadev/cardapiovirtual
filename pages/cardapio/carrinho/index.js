@@ -10,7 +10,7 @@ import { useRouter } from 'next/router';
 
 export default function Home({ produtos, userAgent }) {
     const [modalEndereco, setModalEndereco] = useState(false)
-    const [modalPedido, setModalPedido] = useState(true)
+    const [modalPedido, setModalPedido] = useState(false)
     const [preco, setPreco] = useState(0)
     const router = useRouter();
 
