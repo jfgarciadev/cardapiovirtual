@@ -47,7 +47,7 @@ export default function Home({ produtos, user }) {
   )
 }
 
-export const getServerSideProps = withIronSession(
+export const getServerSideProps = /*withIronSession*/(
   async ({ req, res }) => {
     const user = req.session.get("user");
     if (!user) {
@@ -70,12 +70,12 @@ export const getServerSideProps = withIronSession(
         };
 
     }
-  },
+  }/*,
   {
     cookieName: "CARDACOOKIE",
     cookieOptions: {
       secure: process.env.NODE_ENV === "production" ? true : false
     },
     password: process.env.APPLICATION_SECRET
-  }
+  }*/
 );
