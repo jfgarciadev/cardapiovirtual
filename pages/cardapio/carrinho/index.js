@@ -106,7 +106,7 @@ export default function Home({ produtos, userAgent }) {
             <div className={styles.menuBar}>
 
                 <a href="/cardapio" className={styles.cancelarBtn}>INICIO </a>
-                <a className={styles.addBtn}>CARRINHO ({typeof window == 'undefined' ? null : JSON.parse(localStorage.getItem('cart')).length + ")"}</a>
+                <a className={styles.addBtn}>CARRINHO {/*typeof window == 'undefined' ? null : JSON.parse(localStorage.getItem('cart')).length + ")"*/}</a>
             </div>
 
             <div className={styles.cardapioMain}>
