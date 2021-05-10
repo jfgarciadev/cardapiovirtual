@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import { withIronSession } from "next-iron-session";
 
 const PrivatePage = ({ user }) => (
@@ -31,4 +31,4 @@ export const getServerSideProps = withIronSession(
   }
 );
 
-export default PrivatePage;
+export default PrivatePage;*/
