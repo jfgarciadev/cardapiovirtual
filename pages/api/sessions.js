@@ -4,7 +4,7 @@ import { connectToDatabase } from "../../util/mongodb";
 
 export default withIronSession(
   async (req, res) => {
-    const { db } = await connectToDatabase('mongodb+srv://jfsoftwaredev:Escalobaloba_1999@cluster0.2brja.mongodb.net/juan?retryWrites=true&w=majority', 'juan');
+    const { db } = await connectToDatabase('mongodb+srv:', 'juan');
 
     if (req.method === "POST") {
       const { email, pass } = req.body;
